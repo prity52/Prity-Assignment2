@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <style>
+        .container{
+            border: 2px solid red;
+            border-radius: 10px;
+            margin-left: 35%;
+            margin-right: 35%;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 15px;
+            padding-top: 35px;
+            background-color: rgb(120, 163, 163);
+        }
+        input[type="submit"]{
+            background-color: cyan;
+            margin-left: 40%;
+            margin-right: 40%;
+            padding: 10px;
+            width: 20%;
+            border-radius: 10px;
+            border: 3px solid rgb(128, 128, 128);
+        }
+        input[type="submit"]:hover{
+            background-color: lightcoral;
+        }
+        h1{
+            color: rgb(52, 43, 73);
+            text-align: center;
+            font-size: 200%;
+        }
+        h1:hover{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <div class="container">
+        <h1>Contact Form</h1>
+        <label for="">Upload Photo:</label>
+        <input type="file" required name="Photo" id="Photo">
+        <br>
+        <br>
+        <label for="first name">First Name:</label>
+        <input type="text" id="first name" title="first name" required placeholder="first name">
+        <br>
+        <br>
+        <label for="last name">Last Name:</label>
+        <input type="text" id="last name" title="last name" required placeholder="last name">
+        <br>
+        <br>
+        <fieldset>
+            <legend>Gender</legend>
+            <label for="">Male:</label>
+            <input type="radio" name="male" required>
+            <label for="">Female:</label>
+            <input type="radio" name="male" required>
+        </fieldset>
+        <br>
+        <br>
+        <label for="">Date of Birth:</label>
+        <input type="date" required>
+        <br>
+        <br>
+        <label for="father's name">Father's Name:</label>
+        <input type="text" id="father's name" title="father's name" required placeholder="father's name">
+        <br>
+        <br>
+        <label for="mother's name">Mother's Name:</label>
+        <input type="text" id="mother's name" title="mother's name" required placeholder="mother's name">
+        <br>
+        <br>
+        <label for="">Permanent Address:</label>
+        <input type="textarea" required id="Address" title="Address" placeholder="Enter Your Adderess">
+        <br>
+        <br>
+        <label for="">Correspondence Address:</label>
+        <input type="textarea" required id="Address" title="Address" placeholder="Enter Your Adderess">
+        <br>
+        <br>
+        <label for="">Email:</label>
+        <input type="email" title="email" required placeholder="email@example.com">
+        <br>
+        <br>
+        <label for="">Password:</label>
+        <input type="password" title="password" required placeholder="Enter Your Password" maxlength="8">
+        <br>
+        <br>
+        <input type="submit" value="SUBMIT" title="submit" name="submit" id="submit">
+        <br>
+        <br>
+    </div>
+    </form>
+</body>
+</html>
